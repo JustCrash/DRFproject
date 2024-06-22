@@ -65,6 +65,7 @@ class Lesson(models.Model):
         on_delete=models.CASCADE,
         verbose_name="Курс",
         help_text="Выберите курс",
+        **NULLABLE,
     )
     owner = models.ForeignKey(
         AUTH_USER_MODEL,
