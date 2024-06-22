@@ -8,7 +8,7 @@ class CourseViewSet(ModelViewSet):
 
     def get_serializer_class(self):
         if self.action == 'retrieve':
-            return LessonDetailSerializer
+            return CourseDitailSerializer
         return CourseSerializer
 
 
